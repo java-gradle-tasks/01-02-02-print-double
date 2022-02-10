@@ -23,7 +23,7 @@
 
          System.setOut(stdout);
 
-         String expected="A szoba kerulete 12,56 negyzetmeter.\r\n";
+         String expected="A szoba kerulete 12,56 negyzetmeter."+newLine;
          String actual=byteArrayOutputStream.toString();
 
          int result=expected.compareTo(actual);
