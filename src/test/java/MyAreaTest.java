@@ -23,11 +23,21 @@
 
          System.setOut(stdout);
 
-         String expected="A szoba kerulete 12,56 negyzetmeter."+newLine;
          String actual=byteArrayOutputStream.toString();
+
+         String expected="";
+         if (System.getProperty("os.name").startsWith("Windows")) {
+            expected = "A szoba kerulete 12,56 negyzetmeter." + newLine;
+         } else {
+            expected = "A szoba kerulete 12.56 negyzetmeter." + newLine;
+         }
+
+         System.out.println(expected);
+         System.out.println(actual);
 
          int result=expected.compareTo(actual);
 
-         Assertions.assertEquals(result,0,"A program kimenete nem megfelelo!");
+         Assertions.assertEquals(result,0,"A program kimenete nem a megfelelo karakterkebol epul fel!");
+         Assertions.assertEquals(expected,actual,"A program kimenete nem megfelelo!");
       }
    }
