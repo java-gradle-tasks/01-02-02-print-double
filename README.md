@@ -11,6 +11,6 @@ Ha az a és a b változó egy téglalap alakú szoba két oldalának hossza mét
 
 Ezután írja ki az eredményt a következő formátumba:
 ```
-A szoba kerulte 12,56 negyzetmeter.<újsor>
+A szoba kerulete 12,56 negyzetmeter.<újsor>
 ```
 A számot ne kerekítse, hanem formázza meg úgy, hogy két tizedes jegy pontossággal jelenjen meg! Használja a DecimalFormat osztályt!
