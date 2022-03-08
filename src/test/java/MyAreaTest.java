@@ -27,13 +27,13 @@
 
          String expected="";
          if (System.getProperty("os.name").startsWith("Windows")) {
-            expected = "A szoba kerulete 12,56 negyzetmeter." + newLine;
+            expected = "A szoba kerulete 12,56 meter." + newLine;
          } else {
-            expected = "A szoba kerulete 12.56 negyzetmeter." + newLine;
+            expected = "A szoba kerulete 12.56 meter." + newLine;
          }
 
-         System.out.println(expected);
-         System.out.println(actual);
+         System.out.println("Elvart:"+expected);
+         System.out.println("Aktualis:"+actual);
 
          int result=expected.compareTo(actual);
 
